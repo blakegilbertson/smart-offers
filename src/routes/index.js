@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import TempNavigation from '../components/global/temp_navigation';
 
 import MockPlt from '../routes/MockPlt'
 import AdminDashboard from '../routes/AdminDashboard'
@@ -9,21 +10,8 @@ const GlobalHeader = () => {
   return(
     <header>
       <nav>
-      Routes:
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/mock-plt">Mock PLT</Link>
-          </li>
-          <li>
-            <Link to="/user-dashboard">User Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/admin-dashboard">Admin Dashboard</Link>
-          </li>
-        </ul>
+        Routes:
+        <TempNavigation />
       </nav>
     </header>
   )
