@@ -6,6 +6,9 @@ import MockPlt from '../routes/MockPlt'
 import AdminDashboard from '../routes/AdminDashboard'
 import UserDashboard from '../routes/UserDashboard'
 
+import Heading from '../components/global/heading';
+import Button from '../components/global/button';
+
 const GlobalHeader = () => {
   return(
     <header>
@@ -47,9 +50,13 @@ const Router = () => {
 function Home() {
   return (
     <div className="page-content">
-      <h2>Home</h2>
+      <Heading type="1" text="Home" />
 
-      Some content here about this web app      
+      Some components we can reuse:
+
+      <Heading type="2" text="Components" />
+      
+      <Button id="testId"/>   
     </div>
   );
 }

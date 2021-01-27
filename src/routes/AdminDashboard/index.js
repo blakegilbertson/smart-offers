@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Heading from '../../components/global/heading'
+
 const AdminDashboard = () => {
   return (
     <div className="page-content plt-dashboard">
-      <h2>PLT Dashboard route</h2>
+      <Heading type="2" text="PLT Dashboard route" />
 
       used by staff to create Smart Offers and carousels
 

@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Heading from '../../components/global/heading'
+
 const MockPlt = () => {
   return (
     <div className="page-content mock-plt">
-      <h2>Mock PLT route</h2>
+      <Heading type="1" text="Mock PLT route" />
 
       Content here: 
       <ul>
