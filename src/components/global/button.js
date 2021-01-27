@@ -9,7 +9,18 @@ const Button = props => {
         text="Button"
     } = props
 
-    return <button id={ id } className={`button button-${type} ${className}`} onClick={onClick}>{text}</button>
+    //  ${props.customClass !== null ? `button-${props.customClass}` : null}
+
+    return (
+        <button 
+            id={ id }
+            className={`button button-${type}
+            ${className !== null ? `button-${className}` : ''}`}
+            onClick={onClick}>
+            {text}
+        </button>
+    )
+
 };
 
 export default Button
