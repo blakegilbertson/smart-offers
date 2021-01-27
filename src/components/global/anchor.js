@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-const Link = (props) => {
+const Anchor = (props) => {
     const {
         href = '/',
         id = null,
@@ -22,4 +22,4 @@ const Link = (props) => {
     );
 };
 
-export default Link
+export default Anchor

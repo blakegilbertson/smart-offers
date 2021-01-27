@@ -1,26 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-const Button = props => {
-    const {
-        type = 'tertiary', // primary, secondary, tertiary
-        id = null, 
-        className = null, 
-        onClick = () => {alert('No onClick event set')}, 
-        text="Button"
-    } = props
+const Button = (props) => {
+  const {
+    type = 'tertiary', // primary, secondary, tertiary
+    id = null,
+    className = null,
+    onClick = () => {
+      alert('No onClick event set');
+    },
+    text = 'Button'
+  } = props;
 
-    //  ${props.customClass !== null ? `button-${props.customClass}` : null}
-
-    return (
-        <button 
-            id={ id }
-            className={`button button-${type}
-            ${className !== null ? `button-${className}` : ''}`}
-            onClick={onClick}>
-            {text}
-        </button>
-    )
-
+  return (
+    <button
+      id={id}
+      className={`button button-${type} ${
+        className !== null ? `button-${className}` : ''
+      }`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
 };
 
-export default Button
+export default Button;
