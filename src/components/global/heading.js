@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = props => {
+const Heading = props => {
   const { type, text } = props
   switch (type) {
     case '1': 
@@ -20,4 +20,4 @@ const Header = props => {
   }
 }
 
-export default Header
+export default Heading
